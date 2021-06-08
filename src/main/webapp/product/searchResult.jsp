@@ -15,25 +15,27 @@
 <center>
     <form method="post">
         <a href="/product">Return Product List</a>
-        <tr>
-            <th>ID</th>
-            <th>Product Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Color</th>
-            <th>Description</th>
-            <th>Category</th>
-        </tr>
-        <c:forEach var="product" items="${productList}">
+        <table border="1" cellpadding="5">
             <tr>
-                <td><c:out value="${product.id}"/></td>
-                <td><c:out value="${product.name}"/></td>
-                <td><c:out value="${product.price}"/></td>
-                <td><c:out value="${product.number}"/></td>
-                <td><c:out value="${product.color}"/></td>
-                <td><c:out value="${product.category.name}"/></td>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Color</th>
+                <th>Description</th>
+                <th>Category</th>
             </tr>
-        </c:forEach>
+            <c:forEach var="product" items="${productList}">
+                <tr>
+                    <td><c:out value="${product.id}"/></td>
+                    <td><c:out value="${product.name}"/></td>
+                    <td><c:out value="${product.price}"/></td>
+                    <td><c:out value="${product.number}"/></td>
+                    <td><c:out value="${product.color}"/></td>
+                    <td><c:out value="${product.category.name}"/></td>
+                </tr>
+            </c:forEach>
+        </table>
     </form>
 </center>
 </body>
