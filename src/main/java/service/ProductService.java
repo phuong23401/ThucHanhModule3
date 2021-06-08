@@ -16,7 +16,7 @@ public class ProductService implements IProductService {
     private static final String SELECT_PRODUCT_BY_ID = "SELECT `id`, `pName`, `price`, `number`, `color`, `description`, `cId` FROM `product` WHERE `id` = ?;";
     private static final String SELECT_ALL_PRODUCT = "SELECT * FROM `product`;";
     private static final String UPDATE_PRODUCT = "UPDATE `product` SET `pName` = ?, `price` = ?, `number` = ?, `color` = ?, `description` = ?, `cId` = ? WHERE `id` = ?;";
-    private static final String DELETE_PRODUCT = "DELETE FORM `product` WHERE `id` = ?;";
+    private static final String DELETE_PRODUCT = "DELETE FROM `product` WHERE `id` = ?;";
     private static final String SEARCH_PRODUCT_BY_NAME = "SELECT * FROM `product` WHERE `pName` = ?;";
     private static final String SELECT_CATEGORY_BY_ID = "SELECT * FROM `category` WHERE `id` = ?;";
     private static final String SELECT_ALL_CATEGORY = "SELECT * FROM `category`;";
