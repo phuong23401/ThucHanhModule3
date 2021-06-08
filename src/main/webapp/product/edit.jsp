@@ -29,25 +29,25 @@
             <tr>
                 <th>Price</th>
                 <td>
-                    <input type="text" name="name" value="<c:out value='${product.price}'/>"/>
+                    <input type="text" name="price" value="<c:out value='${product.price}'/>"/>
                 </td>
             </tr>
             <tr>
                 <th>Quantity</th>
                 <td>
-                    <input type="text" name="name" value="<c:out value='${product.number}'/>"/>
+                    <input type="text" name="number" value="<c:out value='${product.number}'/>"/>
                 </td>
             </tr>
             <tr>
                 <th>Color</th>
                 <td>
-                    <input type="text" name="name" value="<c:out value='${product.color}'/>"/>
+                    <input type="text" name="color" value="<c:out value='${product.color}'/>"/>
                 </td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
-                    <input type="text" name="name" value="<c:out value='${product.description}'/>"/>
+                    <input type="text" name="description" value="<c:out value='${product.description}'/>"/>
                 </td>
             </tr>
             <tr>

@@ -1,10 +1,10 @@
 service/IProductService.java
  service.IProductService
-controller/Controller.java
- controller.Controller
-model/Product.java
- model.Product
 model/Category.java
  model.Category
+model/Product.java
+ model.Product
+controller/Controller.java
+ controller.Controller
 service/ProductService.java
  service.ProductService
