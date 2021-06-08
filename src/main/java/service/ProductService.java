@@ -116,6 +116,7 @@ public class ProductService implements IProductService {
             preparedStatement.setString(4, product.getColor());
             preparedStatement.setString(5, product.getDescription());
             preparedStatement.setInt(6, product.getCategory().getId());
+            preparedStatement.setInt(7, product.getId());
 
             rowUpdated = preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
