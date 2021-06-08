@@ -4,7 +4,7 @@ model/Category.java
  model.Category
 model/Product.java
  model.Product
-controller/Controller.java
- controller.Controller
 service/ProductService.java
  service.ProductService
+controller/Controller.java
+ controller.Controller
