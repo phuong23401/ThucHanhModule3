@@ -36,12 +36,12 @@ public class ProductService implements IProductService {
     @Override
     public void createProduct(Product product) {
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(CREATE_PRODUCT)) {
-            preparedStatement.setString(1, "pName");
-            preparedStatement.setInt(2, Integer.parseInt("price"));
-            preparedStatement.setInt(3, Integer.parseInt("number"));
-            preparedStatement.setString(4, "color");
-            preparedStatement.setString(5, "description");
-            preparedStatement.setInt(6, Integer.parseInt("cId"));
+            preparedStatement.setString(1, product.getName());
+            preparedStatement.setInt(2, product.getPrice());
+            preparedStatement.setInt(3, product.getNumber());
+            preparedStatement.setString(4, product.getColor());
+            preparedStatement.setString(5, product.getDescription());
+            preparedStatement.setInt(6, product.getId());
 
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();

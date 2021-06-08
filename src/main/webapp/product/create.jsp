@@ -18,12 +18,6 @@
         <a href="/product">Return Product List</a>
         <table border="1" cellpadding="5">
             <tr>
-                <th>ID</th>
-                <td>
-                    <input type="text" name="id" id="id"/>
-                </td>
-            </tr>
-            <tr>
                 <th>Product Name</th>
                 <td>
                     <input type="text" name="name" id="name"/>
