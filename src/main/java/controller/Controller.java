@@ -148,6 +148,7 @@ public class Controller extends HttpServlet {
 
     private void editProduct(HttpServletRequest req, HttpServletResponse resp) {
         try {
+            int id = Integer.parseInt(req.getParameter("id"));
             String name = req.getParameter("name");
             int price = Integer.parseInt(req.getParameter("price"));
             int number = Integer.parseInt(req.getParameter("number"));
@@ -156,7 +157,7 @@ public class Controller extends HttpServlet {
             int cId = Integer.parseInt(req.getParameter("cId"));
             Category category = productService.selectCategoryById(cId);
 
-            Product product = new Product(name, price, number, color, description, category);
+            Product product = new Product(id, name, price, number, color, description, category);
             productService.updateProduct(product);
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("product/edit.jsp");
