@@ -41,7 +41,7 @@ public class ProductService implements IProductService {
             preparedStatement.setInt(3, product.getNumber());
             preparedStatement.setString(4, product.getColor());
             preparedStatement.setString(5, product.getDescription());
-            preparedStatement.setInt(6, product.getId());
+            preparedStatement.setInt(6, product.getCategory().getId());
 
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
